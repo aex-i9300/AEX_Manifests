@@ -22,8 +22,12 @@ Credits
 * [**OmniROM**](https://github.com/omnirom/)
 * [**AOSPA**](https://github.com/aospa/)
 * [**BlissRoms**](https://github.com/BlissRoms)
+
+External Credits
+-------
 * [**Victor Shilin**](https://github.com/ChronoMonochrome) LOS 16.0 Builder
 * [**Dan Santos**](https://github.com/linusdan) My Mentor, who taught me how to make ROMs
+
 How to Build?
 -------------
 
