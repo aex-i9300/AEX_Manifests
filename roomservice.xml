@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="github"
+        fetch="https://github.com/" />       
+
+  <!-- Removals -->
+  <remove-project name="platform_vendor_aosp" />
+        
+  <!-- Device -->
+  <project name="aex-i9300/platform_device_samsung_i9300" path="device/samsung/i9300" remote="github" revision="9.x" />
+  <project name="aex-i9300/platform_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" revision="9.x" />
+
+  <!-- Kernel -->
+  <project name="optimized-lineageos16-i9300/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="lineage-16.0" />
+
+  <!-- Vendor -->
+  <project name="CustomROMs/android_vendor_samsung_i9300" path="vendor/samsung/i9300" remote="github" revision="lineage-16.0" />  
+  <project name="CustomROMs/android_vendor_samsung_smdk4412-common" path="vendor/samsung/smdk4412-common" remote="github" revision="lineage-16.0" />
+
+  <!-- Extras -->
+  <project name="aex-i9300/platform_vendor_aosp" path="vendor/dot" remote="github" revision="9.x" />
+  <project name="aex-i9300/platform_hardware_samsung" path="hardware/samsung" remote="github" revision="9.x" />
+  <project name="aex-i9300/packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="9.x" />      
+</manifest>
