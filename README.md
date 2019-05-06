@@ -50,15 +50,15 @@ Then to sync up:
 ----------------
 
 ```bash
-  repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+  repo sync -c --force-sync --no-clone-bundle --no-tags
 ```
 Finally to build:
 -----------------
 
 ```bash
   . build/envsetup.sh
-  lunch aosp_device_codename-userdebug
-  mka aex -j$(nproc --all) | tee log.txt
+  lunch aosp_i9300-userdebug
+  mka aex  | tee log.txt
 ```
 ## Report build issues
 - You can reach us via [Telegram](https://t.me/aospextendedgroup)
