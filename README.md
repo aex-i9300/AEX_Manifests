@@ -37,6 +37,7 @@ To initialize a shallow clone, which will save even more space & time, use a com
 ```bash
   repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 9.x
 ```
+```
 Clone my repo:
 
 ```bash
