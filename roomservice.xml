@@ -12,7 +12,7 @@
   <project name="aex-i9300/platform_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" revision="9.x" />
 
   <!-- Kernel -->
-  <project name="optimized-lineageos16-i9300/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="lineage-16.0" />
+  <project name="ChronoMonochrome/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="lineage-16.0" />
 
   <!-- Vendor -->
   <project name="CustomROMs/android_vendor_samsung_i9300" path="vendor/samsung/i9300" remote="github" revision="lineage-16.0" />  
