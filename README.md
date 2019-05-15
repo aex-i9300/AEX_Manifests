@@ -28,7 +28,7 @@ Contributors for my project
 * [**Victor Shilin**](https://github.com/ChronoMonochrome) LOS 16.0 Builder
 * [**Dan Santos**](https://github.com/linusdan) My Mentor, who taught me how to make ROMs
 * [**Jarl-Penguin**](https://github.com/JarlPenguin) For some contribution in what files should be there and build error fixing
-
+* [**Ciyanogen**](https://github.com/ciyanogen) For finding errors in my manifest
 How to Build?
 -------------
 
