@@ -5,7 +5,7 @@
         fetch="https://github.com/" />       
 
   <!-- Removals -->
- 
+  <remove-project name="platform_vendor_aosp" /> 
         
   <!-- Device -->
   <project name="aex-i9300/platform_device_samsung_i9300" path="device/samsung/i9300" remote="github" revision="9.x" />
