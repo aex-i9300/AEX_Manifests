@@ -55,16 +55,16 @@ Then to sync up:
 ```
 Finally to build:
 -----------------
-From root directory of Project, perform following commands in terminal
+Generate the keys used for ROM signing:
 
-```bash
-Altering the subject line to reflect your information:
+From the root of your Android tree, run these commands, altering the subject line to reflect your information:
 
 subject='/C=US/ST=California/L=Mountain View/O=Android/OU=Android/CN=Android/emailAddress=android@android.com'
 mkdir .android-certs
 for x in releasekey platform shared media testkey; do \
     ./development/tools/make_key .android-certs/$x "$subject"; \
 done
+
 
 ```bash
   . build/envsetup.sh
