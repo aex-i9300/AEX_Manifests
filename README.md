@@ -29,23 +29,22 @@ Contributors for my project
 * [**Dan Santos**](https://github.com/linusdan) My Mentor, who taught me how to make ROMs
 * [**Jarl-Penguin**](https://github.com/JarlPenguin) For some contribution in what files should be there and build error fixing
 * [**Ciyanogen**](https://github.com/ciyanogen) For finding errors in my manifest
+
 How to Build?
 -------------
 
-```
 To initialize a shallow clone, which will save even more space & time, use a command like this:
 
 ```bash
   repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 9.x
 ```
-```
+
 Clone my repo:
+----------------
 
 ```bash
 git clone https://github.com/aex-i9300/AEX_Manifests.git -b 9.x .repo/local_manifests
 ``` 
-
-
 
 Then to sync up:
 ----------------
@@ -57,20 +56,21 @@ Finally to build:
 -----------------
 From root directory of Project, perform following commands in terminal
 
-```bash
 Altering the subject line to reflect your information:
-
+```bash
 subject='/C=US/ST=California/L=Mountain View/O=Android/OU=Android/CN=Android/emailAddress=android@android.com'
 mkdir .android-certs
 for x in releasekey platform shared media testkey; do \
     ./development/tools/make_key .android-certs/$x "$subject"; \
 done
+```
 
 ```bash
   . build/envsetup.sh
-  lunch aosp_i9300-userdebug
+  lunch aosp_i9300-eng
   mka aex  | tee log.txt
 ```
+
 ## Report build issues
 - You can reach us via [Telegram](https://t.me/aospextendedgroup)
 
