@@ -1,42 +1,100 @@
-LineageOS
+<p align="center">
+<img src="https://github.com/AospExtended/manifest/raw/7.1.1/aex_logo.png" width="320px" height="320px" > 
+</p>
+
+AospExtended Oreo
 ===========
+AospExtended is just an extension to AOSP, through which we 
+are trying to provide a stock AOSP experience along with some important 
+customization features. We have cherry-picked the features from many 
+other projects and hence we are very thankful to them.
 
-Getting started
----------------
+Credits
+-------
+* [**JDCTeam**](https://github.com/AOSP-JF-MM)
+* [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
+* [**TeamSubstratum (Theme Engine)**](https://github.com/Substratum)
+* [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
+* [**Nitrogen Project**](https://github.com/nitrogen-project)
+* [**ABC ROM**](https://github.com/ezio84)
+* [**GZOSP**](https://github.com/GZOSP)
+* [**Pure Nexus**](https://github.com/PureNexusProject)
+* [**OmniROM**](https://github.com/omnirom/)
+* [**AOSPA**](https://github.com/aospa/)
+* [**BlissRoms**](https://github.com/BlissRoms)
 
+Contributors for my project
+-------
+* [**Victor Shilin**](https://github.com/ChronoMonochrome) LOS 16.0 Builder
+* [**Dan Santos**](https://github.com/linusdan) My Mentor, who taught me how to make ROMs
+* [**Jarl-Penguin**](https://github.com/JarlPenguin) For some contribution in what files should be there and build error fixing
+* [**Ciyanogen**](https://github.com/ciyanogen) For finding errors in my manifest
+
+How to Build?
+-------------
+
+To initialize a shallow clone, which will save even more space & time, use a command like this:
+
+```bash
+  repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 8.1.x
 ```
-1. mkdir -p LOS15 && cd LOS15
 
-2. Initialize your local repository using the LineageOS trees with a command
-  repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
-  
-3. Clone this repo:
-  git clone https://github.com/CustomROMs/android_local_manifests_i9300 -b lineage-15.1 
+Clone my repo:
+----------------
 
-4. Copy local manifest (local_manifest.xml)
-  mkdir -p .repo/local_manifests
-  cp android_local_manifests_i9300/local_manifest.xml .repo/local_manifests/
+```bash
+git clone https://github.com/aex-i9300/platform_manifests.git -b 8.1.x .repo/local_manifests
+``` 
 
-5. Sync LineageOS trees:
-  repo sync --no-tags --no-clone-bundle --force-sync -c -j8
+Then to sync up:
+----------------
 
-6. Apply patches to the newly synced sources:
-  . build/envsetup.sh
-  bash android_local_manifests_i9300/fetch.sh
-  bash android_local_manifests_i9300/apply.sh
+```bash
+  repo sync -c --force-sync --no-clone-bundle --no-tags
+```
+Finally to build:
+-----------------
+From root directory of Project, perform following commands in terminal
 
-7. Generate the keys used for ROM signing:
+```bash
+git clone https://github.com/aex-i9300/platform_manifests.git -b 8.1.x .repo/local_manifests
+. build/envsetup.sh
+bash android_local_manifests_i9300/fetch.sh
+bash android_local_manifests_i9300/apply.sh
+```bash
 
-From the root of your Android tree, run these commands, altering the subject line to reflect your information:
-
+Altering the subject line to reflect your information:
+```bash
 subject='/C=US/ST=California/L=Mountain View/O=Android/OU=Android/CN=Android/emailAddress=android@android.com'
-mkdir ~/.android-certs
+mkdir .android-certs
 for x in releasekey platform shared media testkey; do \
-    ./development/tools/make_key ~/.android-certs/$x "$subject"; \
+    ./development/tools/make_key .android-certs/$x "$subject"; \
 done
-
-8. To build:
-  . build/envsetup.sh
-  lunch lineage_i9300-userdebug
-  make -j8 bacon
 ```
+
+```bash
+  . build/envsetup.sh
+  lunch aosp_i9300-userdebug
+  make -jX aex  | tee log.txt
+```
+
+## Report build issues
+- You can reach us via [Telegram](https://t.me/aospextendedgroup)
+
+## Maintain Officially
+- If you're building **AospExtended** for an unofficial device and would like to make it official, Check out the link below for more information about the requirements for both you and your device.  
+- [Click here for more info](https://github.com/AospExtended/Documentation_and_thread-template) (**Read full README**)
+
+### Important Links:
+
+- [Website](http://www.aospextended.com/)
+- [Download Center](https://downloads.aospextended.com/)
+- [Blog](https://blog.aospextended.com/)
+- [Gerrit Code Review](http://gerrit.aospextended.com/)
+- [Telegram Channel](https://telegram.me/aospextended/)
+- [Documentation & Thread Template](https://github.com/AospExtended/Documentation_and_thread-template/) 
+- [Help us translate AospExtended ROM and bring it to the world!](http://translate.aospextended.com/)
+- [Theme Resources](https://github.com/AospExtended/AEX-Scripts/) 
+- [Extended Devices](https://github.com/AospExtended-devices/)
+- [Gallery](https://aospextended.com/gallery)
+- [Facebook page!](https://www.facebook.com/aospextended/)

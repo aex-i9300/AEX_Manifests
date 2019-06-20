@@ -18,11 +18,17 @@
    <remote  name="seden"
            fetch="https://github.com/ciyanogen"
            revision="lineage-15.1-custom" />
+           
+   <remote  name="github"
+           fetch="https://github.com/" />
+           
+   <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
   
-  <project path="hardware/samsung" name="CustomROMs/android_hardware_samsung" revision="lineage-15.1" />
-  <project path="kernel/samsung/smdk4412" name="ciyanogen/android_kernel_samsung_smdk4412" revision="lineage-15.1-custom" clone-depth="1" />
-  <project path="device/samsung/smdk4412-common" name="ciyanogen/android_device_samsung_smdk4412-common" revision="lineage-15.1-custom" />
-  <project path="device/samsung/i9300" name="ciyanogen/android_device_samsung_i9300" revision="lineage-15.1-custom" />
-  <project path="vendor/samsung/smdk4412-common" name="ciyanogen/android_vendor_samsung_smdk4412-common" revision="lineage-15.1-custom" />
-  <project path="vendor/samsung/i9300" name="CustomROMs/android_vendor_samsung_i9300" revision="lineage-15.1" />
+  <project path="hardware/samsung" name="PixelExperience-i9300/hardware_samsung" revision="oreo-mr1" remote="gitlab" />
+  <project path="kernel/samsung/smdk4412" name="ciyanogen/android_kernel_samsung_smdk4412" revision="lineage-15.1-custom" remote="github" clone-depth="1" />
+  <project path="device/samsung/smdk4412-common" name="ciyanogen/android_device_samsung_smdk4412-common" revision="lineage-15.1-custom" remote="github" />
+  <project path="device/samsung/i9300" name="aex-i9300/platform_device_samsung_i9300" revision="8.1.x" remote="github" />
+  <project path="vendor/samsung/smdk4412-common" name="ciyanogen/android_vendor_samsung_smdk4412-common" revision="lineage-15.1-custom" remote="github" />
+  <project path="vendor/samsung/i9300" name="CustomROMs/android_vendor_samsung_i9300" revision="lineage-15.1" remote="github" />
 </manifest>
