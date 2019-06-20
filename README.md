@@ -57,11 +57,11 @@ Finally to build:
 From root directory of Project, perform following commands in terminal
 
 ```bash
-git clone https://github.com/aex-i9300/platform_manifests.git -b 8.1.x .repo/local_manifests
+git clone https://github.com/aex-i9300/platform_manifests.git -b 8.1.x
 . build/envsetup.sh
 bash android_local_manifests_i9300/fetch.sh
 bash android_local_manifests_i9300/apply.sh
-```bash
+```
 
 Altering the subject line to reflect your information:
 ```bash
