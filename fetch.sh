@@ -7,7 +7,7 @@ path2name()
 
 fetch() {
 	[ ! -n "$ANDROID_BUILD_TOP" ] && echo "Please specify ANDROID_BUILD_TOP before running this script" && return
-	source $ANDROID_BUILD_TOP/android_local_manifests_i9300/common.sh
+	source $ANDROID_BUILD_TOP/platform_manifests/common.sh
 
 	while read line; do
 		proj=$(echo $line | cut -d " " -f1)
@@ -16,7 +16,7 @@ fetch() {
 		echo "git -C $ANDROID_BUILD_TOP/$proj fetch https://github.com/CustomROMS/$(path2name $proj) lineage-15.1"
 		git -C $ANDROID_BUILD_TOP/$proj fetch https://github.com/CustomROMS/$(path2name $proj) lineage-15.1
 		echo ""; echo "";
-	done < $ANDROID_BUILD_TOP/android_local_manifests_i9300/patches.txt
+	done < $ANDROID_BUILD_TOP/platform_manifests/patches.txt
 }
 
 fetch
