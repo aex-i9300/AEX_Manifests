@@ -33,5 +33,5 @@
   <project path="device/samsung/smdk4412-common" name="android_device_samsung_smdk4412-common" revision="lineage-15.1-custom" remote="seden" />
   <project path="device/samsung/i9300" name="platform_device_samsung_i9300" revision="8.1.x" remote="aex-i9300" />
   <project path="vendor/samsung/smdk4412-common" name="android_vendor_samsung_smdk4412-common" revision="lineage-15.1-custom" remote="seden" />
-  <project path="vendor/samsung/i9300" name="CustomROMs/android_vendor_samsung_i9300" revision="lineage-15.1" remote="customroms" />
+  <project path="vendor/samsung/i9300" name="android_vendor_samsung_i9300" revision="lineage-15.1" remote="customroms" />
 </manifest>
